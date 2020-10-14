@@ -245,10 +245,10 @@ class TableMakerField extends Field
             'type' => Type::listOf(Type::listOf(Type::string()))
           ],
           'columns' => [
-            'type' => Type::listOf($columnType),
+            'type' => Type::listOf($columnType)
           ],
           'table' => [
-            'type' => Type::string()
+              'type' => Type::listOf($columnType)
           ]
         ]
       ]));
